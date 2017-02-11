@@ -13,6 +13,22 @@
 		3911D4571E4E9FFC00268F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3911D4551E4E9FFC00268F10 /* Main.storyboard */; };
 		3911D4591E4E9FFC00268F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3911D4581E4E9FFC00268F10 /* Assets.xcassets */; };
 		3911D45C1E4E9FFC00268F10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3911D45A1E4E9FFC00268F10 /* LaunchScreen.storyboard */; };
+		3911D4651E4EA06300268F10 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4641E4EA06300268F10 /* UIKit.framework */; };
+		3911D4671E4EA06C00268F10 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4661E4EA06C00268F10 /* CoreText.framework */; };
+		3911D4691E4EA07D00268F10 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4681E4EA07D00268F10 /* MobileCoreServices.framework */; };
+		3911D46B1E4EA08900268F10 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D46A1E4EA08900268F10 /* SystemConfiguration.framework */; };
+		3911D46D1E4EA09B00268F10 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D46C1E4EA09B00268F10 /* AVFoundation.framework */; };
+		3911D46F1E4EA0A400268F10 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D46E1E4EA0A400268F10 /* CoreTelephony.framework */; };
+		3911D4711E4EA0AB00268F10 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4701E4EA0AB00268F10 /* CoreMedia.framework */; };
+		3911D4731E4EA0B200268F10 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4721E4EA0B200268F10 /* AudioToolbox.framework */; };
+		3911D4751E4EA0BD00268F10 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4741E4EA0BD00268F10 /* libz.tbd */; };
+		3911D4771E4EA0C600268F10 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4761E4EA0C600268F10 /* libstdc++.6.0.9.tbd */; };
+		3911D4791E4EA0CE00268F10 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4781E4EA0CE00268F10 /* libsqlite3.0.tbd */; };
+		3911D4921E4EAC4900268F10 /* libaacplus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D48D1E4EAC4900268F10 /* libaacplus.a */; };
+		3911D4931E4EAC4900268F10 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D48E1E4EAC4900268F10 /* libcrypto.a */; };
+		3911D4941E4EAC4900268F10 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D48F1E4EAC4900268F10 /* libevent.a */; };
+		3911D4951E4EAC4900268F10 /* libQYSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3911D4901E4EAC4900268F10 /* libQYSDK.a */; };
+		3911D4961E4EAC4900268F10 /* QYResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3911D4911E4EAC4900268F10 /* QYResource.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,38 @@
 		3911D4581E4E9FFC00268F10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3911D45B1E4E9FFC00268F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3911D45D1E4E9FFC00268F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3911D4641E4EA06300268F10 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3911D4661E4EA06C00268F10 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		3911D4681E4EA07D00268F10 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3911D46A1E4EA08900268F10 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3911D46C1E4EA09B00268F10 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3911D46E1E4EA0A400268F10 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3911D4701E4EA0AB00268F10 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3911D4721E4EA0B200268F10 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		3911D4741E4EA0BD00268F10 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3911D4761E4EA0C600268F10 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		3911D4781E4EA0CE00268F10 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3911D47D1E4EAC4900268F10 /* QYPOPConversationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPOPConversationManager.h; sourceTree = "<group>"; };
+		3911D47E1E4EAC4900268F10 /* QYPOPCustomUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPOPCustomUIConfig.h; sourceTree = "<group>"; };
+		3911D47F1E4EAC4900268F10 /* QYPOPMessageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPOPMessageInfo.h; sourceTree = "<group>"; };
+		3911D4801E4EAC4900268F10 /* QYPOPSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPOPSDK.h; sourceTree = "<group>"; };
+		3911D4811E4EAC4900268F10 /* QYPOPSessionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPOPSessionInfo.h; sourceTree = "<group>"; };
+		3911D4821E4EAC4900268F10 /* QYPOPSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPOPSessionViewController.h; sourceTree = "<group>"; };
+		3911D4831E4EAC4900268F10 /* QYCommodityInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCommodityInfo.h; sourceTree = "<group>"; };
+		3911D4841E4EAC4900268F10 /* QYConversationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYConversationManager.h; sourceTree = "<group>"; };
+		3911D4851E4EAC4900268F10 /* QYCustomActionConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCustomActionConfig.h; sourceTree = "<group>"; };
+		3911D4861E4EAC4900268F10 /* QYCustomUIConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYCustomUIConfig.h; sourceTree = "<group>"; };
+		3911D4871E4EAC4900268F10 /* QYHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYHeaders.h; sourceTree = "<group>"; };
+		3911D4881E4EAC4900268F10 /* QYPushMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPushMessage.h; sourceTree = "<group>"; };
+		3911D4891E4EAC4900268F10 /* QYSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSDK.h; sourceTree = "<group>"; };
+		3911D48A1E4EAC4900268F10 /* QYSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSessionViewController.h; sourceTree = "<group>"; };
+		3911D48B1E4EAC4900268F10 /* QYSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSource.h; sourceTree = "<group>"; };
+		3911D48C1E4EAC4900268F10 /* QYUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYUserInfo.h; sourceTree = "<group>"; };
+		3911D48D1E4EAC4900268F10 /* libaacplus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libaacplus.a; sourceTree = "<group>"; };
+		3911D48E1E4EAC4900268F10 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto.a; sourceTree = "<group>"; };
+		3911D48F1E4EAC4900268F10 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
+		3911D4901E4EAC4900268F10 /* libQYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQYSDK.a; sourceTree = "<group>"; };
+		3911D4911E4EAC4900268F10 /* QYResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QYResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +81,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3911D4791E4EA0CE00268F10 /* libsqlite3.0.tbd in Frameworks */,
+				3911D4771E4EA0C600268F10 /* libstdc++.6.0.9.tbd in Frameworks */,
+				3911D4941E4EAC4900268F10 /* libevent.a in Frameworks */,
+				3911D4751E4EA0BD00268F10 /* libz.tbd in Frameworks */,
+				3911D4731E4EA0B200268F10 /* AudioToolbox.framework in Frameworks */,
+				3911D4711E4EA0AB00268F10 /* CoreMedia.framework in Frameworks */,
+				3911D46F1E4EA0A400268F10 /* CoreTelephony.framework in Frameworks */,
+				3911D46D1E4EA09B00268F10 /* AVFoundation.framework in Frameworks */,
+				3911D4921E4EAC4900268F10 /* libaacplus.a in Frameworks */,
+				3911D46B1E4EA08900268F10 /* SystemConfiguration.framework in Frameworks */,
+				3911D4691E4EA07D00268F10 /* MobileCoreServices.framework in Frameworks */,
+				3911D4951E4EAC4900268F10 /* libQYSDK.a in Frameworks */,
+				3911D4931E4EAC4900268F10 /* libcrypto.a in Frameworks */,
+				3911D4671E4EA06C00268F10 /* CoreText.framework in Frameworks */,
+				3911D4651E4EA06300268F10 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +107,7 @@
 			children = (
 				3911D44B1E4E9FFC00268F10 /* QY.163Demo */,
 				3911D44A1E4E9FFC00268F10 /* Products */,
+				3911D4631E4EA06300268F10 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +122,7 @@
 		3911D44B1E4E9FFC00268F10 /* QY.163Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3911D47A1E4EAC4900268F10 /* SDK */,
 				3911D44F1E4E9FFC00268F10 /* AppDelegate.h */,
 				3911D4501E4E9FFC00268F10 /* AppDelegate.m */,
 				3911D4521E4E9FFC00268F10 /* ViewController.h */,
@@ -77,6 +142,68 @@
 				3911D44D1E4E9FFC00268F10 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3911D4631E4EA06300268F10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3911D4781E4EA0CE00268F10 /* libsqlite3.0.tbd */,
+				3911D4761E4EA0C600268F10 /* libstdc++.6.0.9.tbd */,
+				3911D4741E4EA0BD00268F10 /* libz.tbd */,
+				3911D4721E4EA0B200268F10 /* AudioToolbox.framework */,
+				3911D4701E4EA0AB00268F10 /* CoreMedia.framework */,
+				3911D46E1E4EA0A400268F10 /* CoreTelephony.framework */,
+				3911D46C1E4EA09B00268F10 /* AVFoundation.framework */,
+				3911D46A1E4EA08900268F10 /* SystemConfiguration.framework */,
+				3911D4681E4EA07D00268F10 /* MobileCoreServices.framework */,
+				3911D4661E4EA06C00268F10 /* CoreText.framework */,
+				3911D4641E4EA06300268F10 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3911D47A1E4EAC4900268F10 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				3911D47B1E4EAC4900268F10 /* ExportHeaders */,
+				3911D48D1E4EAC4900268F10 /* libaacplus.a */,
+				3911D48E1E4EAC4900268F10 /* libcrypto.a */,
+				3911D48F1E4EAC4900268F10 /* libevent.a */,
+				3911D4901E4EAC4900268F10 /* libQYSDK.a */,
+				3911D4911E4EAC4900268F10 /* QYResource.bundle */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		3911D47B1E4EAC4900268F10 /* ExportHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				3911D47C1E4EAC4900268F10 /* POP */,
+				3911D4831E4EAC4900268F10 /* QYCommodityInfo.h */,
+				3911D4841E4EAC4900268F10 /* QYConversationManager.h */,
+				3911D4851E4EAC4900268F10 /* QYCustomActionConfig.h */,
+				3911D4861E4EAC4900268F10 /* QYCustomUIConfig.h */,
+				3911D4871E4EAC4900268F10 /* QYHeaders.h */,
+				3911D4881E4EAC4900268F10 /* QYPushMessage.h */,
+				3911D4891E4EAC4900268F10 /* QYSDK.h */,
+				3911D48A1E4EAC4900268F10 /* QYSessionViewController.h */,
+				3911D48B1E4EAC4900268F10 /* QYSource.h */,
+				3911D48C1E4EAC4900268F10 /* QYUserInfo.h */,
+			);
+			path = ExportHeaders;
+			sourceTree = "<group>";
+		};
+		3911D47C1E4EAC4900268F10 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				3911D47D1E4EAC4900268F10 /* QYPOPConversationManager.h */,
+				3911D47E1E4EAC4900268F10 /* QYPOPCustomUIConfig.h */,
+				3911D47F1E4EAC4900268F10 /* QYPOPMessageInfo.h */,
+				3911D4801E4EAC4900268F10 /* QYPOPSDK.h */,
+				3911D4811E4EAC4900268F10 /* QYPOPSessionInfo.h */,
+				3911D4821E4EAC4900268F10 /* QYPOPSessionViewController.h */,
+			);
+			path = POP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +237,8 @@
 				TargetAttributes = {
 					3911D4481E4E9FFC00268F10 = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = ET2PE64A4E;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -140,6 +268,7 @@
 				3911D45C1E4E9FFC00268F10 /* LaunchScreen.storyboard in Resources */,
 				3911D4591E4E9FFC00268F10 /* Assets.xcassets in Resources */,
 				3911D4571E4E9FFC00268F10 /* Main.storyboard in Resources */,
+				3911D4961E4EAC4900268F10 /* QYResource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +399,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ET2PE64A4E;
 				INFOPLIST_FILE = QY.163Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cijianWu.QY-163Demo";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QY.163Demo/SDK",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC\n\n-ObjC\n-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cijianWu.QYDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7911ed89-d508-45dd-bdb6-7fdca6c51378";
+				PROVISIONING_PROFILE_SPECIFIER = QY.Develper.Profile;
 			};
 			name = Debug;
 		};
@@ -281,10 +420,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ET2PE64A4E;
 				INFOPLIST_FILE = QY.163Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cijianWu.QY-163Demo";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QY.163Demo/SDK",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC\n\n-ObjC\n-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cijianWu.QYDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7911ed89-d508-45dd-bdb6-7fdca6c51378";
+				PROVISIONING_PROFILE_SPECIFIER = QY.Develper.Profile;
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "QYSDK.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[QYSDK sharedSDK] registerAppId:@"14d2e3ebd8a91a19644d84fa8a9b9d81" appName:@"QY.163Demo"];
+    
     return YES;
 }
 
