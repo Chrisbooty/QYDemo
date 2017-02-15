@@ -74,6 +74,7 @@
 		3911D48F1E4EAC4900268F10 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
 		3911D4901E4EAC4900268F10 /* libQYSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQYSDK.a; sourceTree = "<group>"; };
 		3911D4911E4EAC4900268F10 /* QYResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QYResource.bundle; sourceTree = "<group>"; };
+		397AC9161E53F4AE00A3F007 /* QY.163Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = QY.163Demo.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		3911D44B1E4E9FFC00268F10 /* QY.163Demo */ = {
 			isa = PBXGroup;
 			children = (
+				397AC9161E53F4AE00A3F007 /* QY.163Demo.entitlements */,
 				3911D47A1E4EAC4900268F10 /* SDK */,
 				3911D44F1E4E9FFC00268F10 /* AppDelegate.h */,
 				3911D4501E4E9FFC00268F10 /* AppDelegate.m */,
@@ -238,7 +240,15 @@
 					3911D4481E4E9FFC00268F10 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = ET2PE64A4E;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -399,7 +409,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ET2PE64A4E;
+				CODE_SIGN_ENTITLEMENTS = QY.163Demo/QY.163Demo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QY.163Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -411,8 +423,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cijianWu.QYDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7911ed89-d508-45dd-bdb6-7fdca6c51378";
-				PROVISIONING_PROFILE_SPECIFIER = QY.Develper.Profile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -420,7 +432,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ET2PE64A4E;
+				CODE_SIGN_ENTITLEMENTS = QY.163Demo/QY.163Demo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = QY.163Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -432,8 +446,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cijianWu.QYDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7911ed89-d508-45dd-bdb6-7fdca6c51378";
-				PROVISIONING_PROFILE_SPECIFIER = QY.Develper.Profile;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -456,6 +470,7 @@
 				3911D4621E4E9FFC00268F10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

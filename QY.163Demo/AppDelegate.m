@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 #import "QYSDK.h"
 
 @interface AppDelegate ()
@@ -21,8 +22,104 @@
     
     [[QYSDK sharedSDK] registerAppId:@"14d2e3ebd8a91a19644d84fa8a9b9d81" appName:@"QY.163Demo"];
     
+    
+    
+    //注册 APNS
+    if ([[UIApplication sharedApplication]
+         respondsToSelector:@selector(registerForRemoteNotifications)])
+    {
+        UIUserNotificationType types = UIRemoteNotificationTypeBadge
+        | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert;
+        UIUserNotificationSettings *settings =
+        [UIUserNotificationSettings settingsForTypes:types categories:nil];
+        [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+        [[UIApplication sharedApplication] registerForRemoteNotifications];
+    }
+    else
+    {
+        UIRemoteNotificationType types = UIRemoteNotificationTypeAlert
+        | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeBadge;
+        [[UIApplication sharedApplication] registerForRemoteNotificationTypes:types];
+    }
+    
+    
+    QYUserInfo *userInfo = [[QYUserInfo alloc] init];
+    userInfo.userId = @"QYUserInfo.userId";
+    NSMutableArray *array = [NSMutableArray new];
+    NSMutableDictionary *dictRealName = [NSMutableDictionary new];
+    [dictRealName setObject:@"real_name" forKey:@"key"];
+    [dictRealName setObject:@"边晨" forKey:@"value"];
+    [array addObject:dictRealName];
+    NSMutableDictionary *dictMobilePhone = [NSMutableDictionary new];
+    [dictMobilePhone setObject:@"mobile_phone" forKey:@"key"];
+    [dictMobilePhone setObject:@"13805713536" forKey:@"value"];
+    [dictMobilePhone setObject:@(NO) forKey:@"hidden"];
+    [array addObject:dictMobilePhone];
+    NSMutableDictionary *dictEmail = [NSMutableDictionary new];
+    [dictEmail setObject:@"email" forKey:@"key"];
+    [dictEmail setObject:@"bianchen@163.com" forKey:@"value"];
+    [array addObject:dictEmail];
+    NSMutableDictionary *dictAuthentication = [NSMutableDictionary new];
+    [dictAuthentication setObject:@"0" forKey:@"index"];
+    [dictAuthentication setObject:@"authentication" forKey:@"key"];
+    [dictAuthentication setObject:@"实名认证" forKey:@"label"];
+    [dictAuthentication setObject:@"已认证" forKey:@"value"];
+    [array addObject:dictAuthentication];
+    NSMutableDictionary *dictBankcard = [NSMutableDictionary new];
+    [dictBankcard setObject:@"1" forKey:@"index"];
+    [dictBankcard setObject:@"bankcard" forKey:@"key"];
+    [dictBankcard setObject:@"绑定银行卡" forKey:@"label"];
+    [dictBankcard setObject:@"622202******01116068" forKey:@"value"];
+    [array addObject:dictBankcard];
+    
+    NSData *data = [NSJSONSerialization dataWithJSONObject:array
+                                                   options:0
+                                                     error:nil];
+    if (data)
+    {
+        userInfo.data = [[NSString alloc] initWithData:data
+                                              encoding:NSUTF8StringEncoding];
+    }
+    
+    [[QYSDK sharedSDK] setUserInfo:userInfo];
+    
+    
+    //判断接收信息
+    if (launchOptions) {
+        NSDictionary *dicUserInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    }
+    
+    
     return YES;
 }
+
+#pragma mark -推送
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    
+    if (deviceToken) {
+        NSLog(@"获取deviceToken成功!");
+    }else {
+        NSLog(@"获取deviceToken失败!");
+    }
+    
+    [[QYSDK sharedSDK] updateApnsToken:deviceToken];
+}
+
+#pragma mark -接收推送信息
+- (void)application:(UIApplication *)application didReceiveRemoteNotification: (NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler
+{
+    NSLog(@"%@",userInfo[@"aps"][@"alert"]);
+    NSLog(@"%@",[(UINavigationController *)self.window.rootViewController visibleViewController]);
+    ViewController *vc = (ViewController *)[(UINavigationController *)self.window.rootViewController visibleViewController];
+    if ([vc isKindOfClass:[ViewController class]]) {
+        [vc click:nil];
+    }
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -32,8 +129,10 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    NSInteger count = [[[QYSDK sharedSDK] conversationManager] allUnreadCount];
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:count];
+
 }
 
 
